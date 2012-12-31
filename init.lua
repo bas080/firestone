@@ -1,7 +1,10 @@
+minetest.register_alias("firestone", "firestone:firestone")
+minetest.register_alias("mesecons:solarpanel", "mesecons_solarpanel:solar_panel_off")
+
 minetest.register_node("firestone:firestone", {
-	description = "Fire",
+	description = "Fire node",
 	tile_images = {"firestone_firestone_top.png^firestone_embers.png", "default_wood.png", "firestone_firestone.png"},
-	groups = {igniter=2,crumbly=3},
+	groups = {igniter=2, crumbly=3},
 	damage_per_second = 4,
 	
 	after_place_node = function(pos)
@@ -31,7 +34,7 @@ minetest.register_node("firestone:flame", {
 	}},
 	inventory_image = "fire_basic_flame.png",
 	light_source = 14,
-	groups = {igniter=2,immortal},
+	groups = {igniter=2, immortal, not_in_creative_inventory=1},
 	drop = '',
 	walkable = false,
 	damage_per_second = 4,
@@ -46,7 +49,7 @@ minetest.register_node("firestone:flame_low", {
 	}},
 	inventory_image = "fire_basic_flame.png",
 	light_source = 12,
-	groups = {igniter=2,immortal},
+	groups = {igniter=2, immortal, not_in_creative_inventory=1},
 	drop = '',
 	walkable = false,
 	damage_per_second = 4,
