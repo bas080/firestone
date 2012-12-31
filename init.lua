@@ -1,5 +1,13 @@
 minetest.register_alias("firestone", "firestone:firestone")
-minetest.register_alias("mesecons:solarpanel", "mesecons_solarpanel:solar_panel_off")
+
+minetest.register_craft({
+	output = '"firestone:firestone" 1',
+	recipe = {
+		{'default:coal_lump', 'default:coal_lump', 'default:coal_lump'},
+		{'default:coal_lump', 'default:torch', 'default:coal_lump'},
+		{'default:coal_lump', 'default:coal_lump', 'default:coal_lump'},
+	}
+})
 
 minetest.register_node("firestone:firestone", {
 	description = "Fire node",
