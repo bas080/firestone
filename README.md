@@ -5,9 +5,9 @@
 
 <h2>Description</h2>
 <ul>
-  <li>Play chess within minetest.</li>
-  <li>Adds several items like a chessboard and chesspieces.</li>
-  <li>Future features include piece ownership (assignment) and illegal move checking</li>
+  <li>Adds a node which sustains a fire</li>
+  <li>Lua contains "makes_fire" variable. Set to true of you want fire when fire stone placed or else you have to lit the fire yourself</li>
+  <li>Watch out for wood, plants, trees and everything flammable</li>
 </ul>
 
 <h2>License</h2>
