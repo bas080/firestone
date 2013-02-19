@@ -8,7 +8,7 @@
 
 BY:             bas080
 DESCRIPTION:    Build fireplaces or big fire torches
-VERSION:        1.0
+VERSION:        1.1.5
 LICENSE:        WTFPL
 FORUM:          http://forum.minetest.net/viewtopic.php?id=2476
 
@@ -17,11 +17,11 @@ Changelog
 1.2
 * Improve light before fire feature
 
+1.1.5
+* Chimney nodes with smoke thnx to aximx51v
+
 1.1
 * Added Casimir's to light the nodebox before fire
-
-1.0
-* Chimney nodes with smoke thnx to aximx51v
 
 0.2
 * Added craft
