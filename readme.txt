@@ -20,6 +20,7 @@ Changelog
 1.1.7
 * Made firestone look like it is made out of stone
 * Changed crafting recipe to cobble, coal and torch
+* Changed group to act like stone but still ignites nodes nearby
 
 1.1.5
 * Chimney nodes with smoke thnx to aximx51v
