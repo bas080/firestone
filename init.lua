@@ -1,3 +1,12 @@
+-- Boilerplate to support localized strings if intllib mod is installed.
+local S
+if (minetest.get_modpath("intllib")) then
+  dofile(minetest.get_modpath("intllib").."/intllib.lua")
+  S = intllib.Getter(minetest.get_current_modname())
+else
+  S = function ( s ) return s end
+end
+
 local makes_fire = true -- set to false if you want to light the fire yourself and extinguish it
 local group
 
@@ -19,7 +28,7 @@ minetest.register_craft({
 })
 
 minetest.register_node("firestone:firestone", {
-  description = "Fire node",
+  description = S("Fire node"),
   tile_images = {"default_cobble.png^firestone_top.png", "default_cobble.png", "default_cobble.png^default_coal_lump.png"},
   groups = {igniter=2, cracky=3, stone=2},
   damage_per_second = 4,
@@ -40,7 +49,7 @@ minetest.register_node("firestone:firestone", {
 })
 
 minetest.register_node("firestone:flame", {
-  description = "Fire",
+  description = S("Fire"),
   drawtype = "plantlike",
   tiles = {{
     name="fire_basic_flame_animated.png",
@@ -59,7 +68,7 @@ minetest.register_node("firestone:flame", {
 })
 
 minetest.register_node("firestone:flame_low", {
-  description = "Fire",
+  description = S("Fire"),
   drawtype = "plantlike",
   tiles = {{
     name="fire_basic_flame_animated.png",
@@ -153,7 +162,7 @@ minetest.register_craft({
 })
 
 minetest.register_node("firestone:chimney", {
-  description = "WIP",
+  description = S("WIP"),
   drawtype = "nodebox",
   node_box = {type = "fixed",
     fixed = {
@@ -174,7 +183,7 @@ minetest.register_node("firestone:chimney", {
 })
 
 minetest.register_node("firestone:smoke", {
-    description = "smoke",
+    description = S("smoke"),
     drawtype = "plantlike", 
     tiles ={{
     name="firestone_smoke.png", animation={type="vertical_frames", aspect_w=16, aspect_h=16, length=4.0},
