@@ -1,1 +1,6 @@
 # Translation by Xanthin
+
+Fire Node = Feuerstelle
+Fire = Feuer
+WIP = Schornstein
+smoke = Rauch
