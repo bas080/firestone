@@ -1,1 +1,6 @@
-#
+#Template
+
+Fire Node = 
+Fire = 
+WIP = 
+smoke = 
