@@ -1,6 +1,6 @@
 #Template
 
-Fire Node = 
+Fire node = 
 Fire = 
 WIP = 
 smoke = 
